@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BIFP Identifier</string>
+    <string name="dummy_text">Dummy Text 2</string>
+    <string name="load_image">Load Image</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="output">Latin name: -</string>
+    <string name="result">Result Here</string>
+    <string name="click_to_search">Search for more images on Google</string>
+    <string name="default_image">default Image</string>
+</resources>

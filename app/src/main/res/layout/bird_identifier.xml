@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BirdIdentifier">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/default_image"
+            android:src="@drawable/search_picture">
+
+        </ImageView>
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_add_image"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_load_image"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/load_image"
+            android:textColor="@color/white">
+
+        </Button>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_capture_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@color/purple_500"
+            android:text="Select Image"
+            android:textColor="@color/white">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_button"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/output"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/result"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20sp">
+
+                </TextView>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_search_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/click_to_search"
+                android:textSize="14sp">
+
+            </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
