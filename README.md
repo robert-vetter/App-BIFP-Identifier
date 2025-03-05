@@ -1,0 +1,1 @@
+BIFP Identifier is an AI-powered image recognition app that allows users to detect and classify food, animals, and flowers using their smartphone camera. Simply take a photo or upload an image, and the app will identify the object using machine learning models.
